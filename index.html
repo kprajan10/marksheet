@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ADVANCED MARK SHEET</title>
+        <style>
+        body {
+    text-align:center;
+    width:90%;
+    margin-right:auto;
+    margin-left:auto;
+}
+table{
+    border-collapse:collapse ;
+    width:90%;
+    margin-right:auto;
+    margin-left:auto;
+}
+table th,td{
+    border:4px solid black;
+    padding:8px 8px;
+    
+}
+td{
+    height:20px;
+}
+input{
+    margin-right:auto;
+    margin-left:auto;
+    text-align:center;
+    height:15px;
+    width:95%;
+}
+a{
+   text-decoration:none;
+}
+#a6, #b6, #c6, #d6, #e6{
+	color:green ;
+	font-weight:bold;
+}
+        </style>
+        <script>
+        function addup(){
+//first row
+var a11,a21,a31,a41,a51; 
+a11=Number(document.getElementById("a1").value);
+a21 =Number(document.getElementById("a2").value);
+a31 =Number(document.getElementById("a3").value);
+a41 =Number(document.getElementById("a4").value);
+a51 =Number(document.getElementById("a5").value);
+a111=a11+a21+a31+a41+a51;
+document.getElementById("a6").innerHTML=a111;
+
+//second row addup
+var b11,b21,b31,b41,b51; 
+b11=Number(document.getElementById("b1").value);
+b21 =Number(document.getElementById("b2").value);
+b31 =Number(document.getElementById("b3").value);
+b41 =Number(document.getElementById("b4").value);
+b51 =Number(document.getElementById("b5").value);
+b111=b11+b21+b31+b41+b51;
+document.getElementById("b6").innerHTML=b111;
+
+//third row addup
+var c11,c21,c31,c41,c51; 
+c11=Number(document.getElementById("c1").value);
+c21 =Number(document.getElementById("c2").value);
+c31 =Number(document.getElementById("c3").value);
+c41 =Number(document.getElementById("c4").value);
+c51 =Number(document.getElementById("c5").value);
+c111=c11+c21+c31+c41+c51;
+document.getElementById("c6").innerHTML=c111;
+
+//fourth row addup
+var D11,D21,D31,D41,D51; 
+D11=Number(document.getElementById("d1").value);
+D21 =Number(document.getElementById("d2").value);
+D31 =Number(document.getElementById("d3").value);
+D41 =Number(document.getElementById("d4").value);
+D51 =Number(document.getElementById("d5").value);
+D111=D11+D21+D31+D41+D51;
+document.getElementById("d6").innerHTML=D111;
+
+//fifth row addup
+var E11,E21,E31,E41,E51; 
+E11=Number(document.getElementById("e1").value);
+E21 =Number(document.getElementById("e2").value);
+E31 =Number(document.getElementById("e3").value);
+E41 =Number(document.getElementById("e4").value);
+E51 =Number(document.getElementById("e5").value);
+E111=E11+E21+E31+E41+E51;
+document.getElementById("e6").innerHTML=E111;
+}
+//clearing data
+function clean(){
+document.getElementById("a1").value="";
+document.getElementById("a2").value="";
+document.getElementById("a3").value="";
+document.getElementById("a4").value="";
+document.getElementById("a5").value="";
+document.getElementById("a6").innerHTML="";
+
+document.getElementById("b1").value="";
+document.getElementById("b2").value="";
+document.getElementById("b3").value="";
+document.getElementById("b4").value="";
+document.getElementById("b5").value="";
+document.getElementById("b6").innerHTML="";
+
+document.getElementById("c1").value="";
+document.getElementById("c2").value="";
+document.getElementById("c3").value="";
+document.getElementById("c4").value="";
+document.getElementById("c5").value="";
+document.getElementById("c6").innerHTML="";
+
+document.getElementById("d1").value="";
+document.getElementById("d2").value="";
+document.getElementById("d3").value="";
+document.getElementById("d4").value="";
+document.getElementById("d5").value="";
+document.getElementById("d6").innerHTML="";
+
+document.getElementById("e1").value="";
+document.getElementById("e2").value="";
+document.getElementById("e3").value="";
+document.getElementById("e4").value="";
+document.getElementById("e5").value="";
+document.getElementById("e6").innerHTML="";
+}
+        </script>
+    </head>
+    <body>
+    <h1>ADVANCED MARK SHEET</h1>
+     <div id="table">
+      <table>
+          <tr>
+              <th>NAME</th>
+              <th>ENGLISH</th>
+              <th>LANGUAGE</th>
+              <th>MATHS</th>
+              <th>SCIENCE</th>
+              <th>SOCIAL</th>
+              <th>TOTAL</th>
+          </tr>
+           <tr>
+              <td><input type="text" placeholder="NAME"></input></td>
+              <td><input type="number" placeholder="MARK" id="a1"></input></td>
+              <td><input type="number" placeholder="MARK" id="a2"></input></td>
+              <td><input type="number" placeholder="MARK" id="a3"></input></td>
+              <td><input type="number" placeholder="MARK" id="a4"></input></td>
+              <td><input type="number" placeholder="MARK" id="a5"></input></td>
+              <td id="a6"></td>
+          </tr>
+          <tr>
+              <td><input type="text" placeholder="NAME"></input></td>
+              <td><input type="number" placeholder="MARK" id="b1"></input></td>
+              <td><input type="number" placeholder="MARK" id="b2"></input></td>
+              <td><input type="number" placeholder="MARK" id="b3"></input></td>
+              <td><input type="number" placeholder="MARK" id="b4"></input></td>
+              <td><input type="number" placeholder="MARK" id="b5"></input></td>
+              <td  id="b6"></td>
+          </tr>
+          <tr>
+              <td><input type="text" placeholder="NAME"></input></td>
+              <td><input type="number" placeholder="MARK" id="c1"></input></td>
+              <td><input type="number" placeholder="MARK" id="c2"></input></td>
+              <td><input type="number" placeholder="MARK" id="c3"></input></td>
+              <td><input type="number" placeholder="MARK" id="c4"></input></td>
+              <td><input type="number" placeholder="MARK" id="c5"></input></td>
+              <td  id="c6"></td>
+          </tr>
+          <tr>
+              <td><input type="text" placeholder="NAME"></input></td>
+              <td><input type="number" placeholder="MARK" id="d1"></input></td>
+              <td><input type="number" placeholder="MARK" id="d2"></input></td>
+              <td><input type="number" placeholder="MARK" id="d3"></input></td>
+              <td><input type="number" placeholder="MARK" id="d4"></input></td>
+              <td><input type="number" placeholder="MARK" id="d5"></input></td>
+              <td  id="d6"></td>
+          </tr>
+          <tr>
+              <td><input type="text" placeholder="NAME"></input></td>
+              <td><input type="number" placeholder="MARK" id="e1"></input></td>
+              <td><input type="number" placeholder="MARK" id="e2"></input></td>
+              <td><input type="number" placeholder="MARK" id="e3"></input></td>
+              <td><input type="number" placeholder="MARK" id="e4"></input></td>
+              <td><input type="number" placeholder="MARK" id="e5"></input></td>
+              <td  id="e6"></td>
+          </tr>
+       
+      </table>
+      <br />
+      <button onclick="addup()">Add Up</button>
+      <button onclick="clean()">Clear</button>
+         
+     </div>
+      <hr>
+   <footer align="center">
+   <div id="logo">
+        <a href="https://m.facebook.com/nithin.chargran/about">
+            <img src="http://www.newdesignfile.com/postpic/2015/10/facebook-icon-black-circle_175546.png" height="37px">
+        </a>
+        
+        <a href="https://www.instagram.com/">
+            <img src="http://bellier-art.com/wp-content/uploads/2018/07/instagram-icon-white-on-black-circle-1.png" height="35px">
+        </a>
+        
+        <a href="https://in.linkedin.com/in/nithin-balasubramanian-b01080127">
+            <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_black-512.png" height="35px">
+        </a>
+        
+         <a href="https://www.github.com/NithinBalasubramanian" style="padding-left:7px;">
+          <img src="https://image.flaticon.com/icons/svg/25/25231.svg" height="32px">
+        </a>
+        
+        
+        </div><br />
+  
+       &copy India-2K18<br/><b>Paradice Technology</b><br><hr>
+   </footer>
+        
+    </body>
+</html>
+    
